@@ -5,6 +5,27 @@
     <title>  ¡Bienvenidos a yo te adopto!  </title>
     
     <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset200802.css">
+    <style>
+      /* Selector de etiqueta*/
+      section {
+        position: relative;
+      }
+
+      img {
+        position: absolute; /*Flota la imagen*/
+        left: 0;
+        bottom: 0;
+        opacity: 0.1;
+      } 
+      
+      /*Selector de descendencia */ 
+      section div {
+       position: relative;
+       z-index: 1;
+
+      }
+    
+    </style>
    </head>
     
    <body>
@@ -13,8 +34,12 @@
         <p> Hogares para nuestros amigos</p>
      </section>  
      <section style="background-color: #f06252; padding:64px ;">
-       <h2 style="color: #553457; font-size: 28px; text-transform: uppercase; text-align:center" > ¿Que es yo te adopto? </h2>
+       <div>
+        
+        <h2 style="color: #553457; font-size: 28px; text-transform: uppercase; text-align:center" > ¿Que es yo te adopto? </h2>
         <p style="color: white; margin-top: 15px;">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore accusamus dolorum, eveniet obcaecati perferendis delectus corrupti facere, deleniti nesciunt possimus illo quo libero tempore dolor nobis iste quae ut.  </p>
+        <img src="./images/paw-print.png" alt="" />
+        </div>
      </section> 
      <section>
        <h2> Busco un lugar, ¿Me adoptas?</h2>
