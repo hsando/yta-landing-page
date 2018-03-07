@@ -7,7 +7,7 @@
   }
     .yta_AboutUs-container {
       position: relative;
-      z-index: 1;
+      z-index: 1; 
     }
   
       .yta_AboutUs-container-dog {
@@ -33,12 +33,12 @@
       
       .yta_AboutUs-container-desc { 
         color: white; 
-        margin-top: 15px; 
+        margin-top: 16px; 
       } 
      
     .yta_AboutUs-pawPrint { 
       position: absolute; 
       bottom: 0; 
       left: 0; 
-      opacity: 0.1; 
+      opacity: 0.2; 
     }
