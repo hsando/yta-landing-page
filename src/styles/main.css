@@ -1,3 +1,20 @@
+.yta_home {
+  height: 600px;  /*Para navegadores que no soporten view port h*/
+  height: 100vh;
+  background-color: #ffc85e;
+  background-image: url(../images/bg-home.jpg);  
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
 .yta_AboutUs { 
     position: relative; 
     background-color: #f06252; 
@@ -42,3 +59,5 @@
       left: 0; 
       opacity: 0.2; 
     }
+
+    
