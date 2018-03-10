@@ -1,3 +1,11 @@
+a {
+    text-decoration:none; /*Son los links de toda la pagina*/
+    color: inherit; 
+  }
+
+
+   
+
 .yta_home {
   height: 600px;  /*Para navegadores que no soporten view port h*/
   height: 100vh;
@@ -115,6 +123,7 @@
 
        .yta_Camp-card{
          color: white;
+         text-align: center;
        }
 
        .yta_Camp-map{
@@ -123,7 +132,28 @@
            width: 250px;
            border-radius: 50%;
            margin: 32px auto;
-
-
        }
     
+       footer {
+         background-color: #553457;
+         color: white;
+         text-align: center;
+         padding: 32px;    
+
+       }
+
+       footer ul li {
+         display: inline-block;
+         margin: 10px 5px;   
+
+       }
+
+       footer ul li:first-child {
+         margin-left: 0;
+       }
+
+       footer ul li:last-child {
+        margin-right: 0;
+      }
+
+     
