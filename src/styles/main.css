@@ -60,4 +60,42 @@
       opacity: 0.2; 
     }
 
+    .yta_adoptMe {
+        background-color: black
+    }
+
+      .yta_adoptMe-title{
+          background-color: #ffc85e;
+          text-align: center;
+          padding: 32px;
+          text-transform: uppercase;
+          font-size: 28px;
+          color: #553457  
+      }
+
+      .yta_adoptMe-card{
+        background-color: #553457;
+        text-align: center;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        color: white;      
+      }
+
+      .yta_adoptMe-card-img {
+        height: 250px;
+        background-size: cover;
+        background-position: center;
+
+      }
+
+      .yta_adoptMe-card-img + div {
+        padding: 30px;
+       }
+
+       .yta_adoptMe-card-img + div h3 {
+           font-size: 20px;
+           text-transform: uppercase;
+           margin-bottom: 10px;  
+       }
     
