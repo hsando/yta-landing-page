@@ -10,22 +10,27 @@
     -->
     <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset200802.css" />
     <link rel="stylesheet" href="./styles/main.css" />
+    
   </head>
   
   <body>
-
-    <nav>
-      <ul>
-        <li> <a href="#">Home</a></li>
-        <li> <a href="#"><span class="yta_u-onlyRead">¿Que es yo te adopto? </span>Acerca</a></li>
-        <li> <a href="#"><span class="yta_u-onlyRead">Animales en adoptcion </span>Adoptar</a></li>
-        <li> <a href="#"><span class="yta_u-onlyRead"> Testimoniales de las personas </span>Testimonio</a></li>
-        <li> <a href="#"><span class="yta_u-onlyRead">Campanas de vacunacion </span>Campañas</a></li>
+    <h1 class="yta_u-onlyRead"> Bienvenidos a Yo Te adopto </h1> 
+    <nav class="yta_Menu">
+      <h2 class="yta_u-onlyRead">Menu de Naveacion </h2>
+      <i id="menuIcon" class="yta_menu"></i>
+      <i class="yta_logo"></i>
+      <ul id="menuList" class="yta_Menu-list">
+        <li> <a href="#home">Home</a></li>
+        <li> <a href="#aboutUs"><span class="yta_u-onlyRead">¿Que es yo te adopto? </span>Acerca</a></li>
+        <li> <a href="#adopt"><span class="yta_u-onlyRead">Animales en adoptcion </span>Adoptar</a></li>
+        <li> <a href="#testimony"><span class="yta_u-onlyRead"> Testimoniales de las personas </span>Testimonio</a></li>
+        <li> <a href="#camp"><span class="yta_u-onlyRead">Campanas de vacunacion </span>Campañas</a></li>
       </ul>
     </nav>  
 
 
-    <section class="yta_home">
+    <section id="home" class="yta_home">
+      <h2 class="yta_u-onlyRead"> Home </h2>
       <svg aria-labelledby="home-title home-desc" width="150" height="150">
         <title id="home-title">Yo Te Adopto</title>
         <desc id="home-desc"> Hogares para nuestros amigos </desc>
@@ -40,7 +45,7 @@
     
     <!-- Empieza modulo en trabajo -->
 
-    <section class="yta_AboutUs">
+    <section id="aboutUs" class="yta_AboutUs">
       <div class="yta_AboutUs-container">
         <div class="yta_AboutUs-container-dog">
           <picture>
@@ -65,7 +70,7 @@
 
     <!-- Termina Modulo de trabajo-->
 
-    <section class="yta_adoptMe">
+    <section id="adopt" class="yta_adoptMe">
       <h2 class="yta_adoptMe-title">
         
         <i class="yta_logo"></i>  Busco un lugar, </br>¿Me adoptas?</h2>
@@ -86,7 +91,7 @@
     </section>
 
 
-    <section class="yta_Camp">
+    <section id="camp" class="yta_Camp">
       <h2 class="yta_Camp-title">Campañas de vacunación</h2>
       <div class="yta_Camp-map"></div>
       <article class="yta_Camp-card">
@@ -123,5 +128,24 @@
       </nav>
       Yo te Adopto &reg; 2018
     </footer>
+    <script>
+        var menuList = document.getElementById('menuList');
+        var menuIcon = document.getElementById('menuIcon');
+        
+         function addIcon() {
+          menuList.classList.toggle('is-opened');
+          if (menuList.classList.contains('is-opened')){
+            document.body.style.overflow = 'hidden';
+          } else {
+            document.body.style.overflow = 'auto';
+          }
+         };
+        
+          menuIcon.addEventListener('click',addIcon);
+          window.onhashchange = function() {
+            menuIcon.click();
+          }
+      
+      </script> 
   </body>
 </html>
